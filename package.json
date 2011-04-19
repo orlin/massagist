@@ -18,7 +18,7 @@
 , "dependencies":
   { "coffee-script": ""
   , "underscore": ""
-  , "underscore.string": "https://github.com/edtsech/underscore.string/tarball/master"
+  , "underscore.string": ""
   , "eyes": ""
   , "yaml": ""
   , "markdown": ""
