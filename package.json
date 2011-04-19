@@ -1,7 +1,7 @@
 { "name": "massagist"
 , "description": "streaming data formats"
 , "keywords": [ "node", "data", "buffers", "streams", "formats" ]
-, "version": "0.0.1-1"
+, "version": "0.0.1-2"
 , "homepage": "https://github.com/orlin/massagist/"
 , "repository":
   { "type": "git"
@@ -26,7 +26,7 @@
   }
 , "devDependencies": { "vows": "" }
 , "scripts": { "test": "vows spec/*.js" }
-, "engines" : { "node" : "0.4 || 0.5", "npm" : "1" }
+, "engines" : { "node" : "0.4 || 0.5" }
 , "licenses":
   [ { "type": "Unlicense"
     , "url" : "http://unlicense.org/"
