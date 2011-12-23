@@ -1,7 +1,7 @@
 { "name": "massagist"
 , "description": "streaming data formats"
-, "keywords": [ "node", "data", "buffers", "streams", "formats" ]
-, "version": "0.0.1-3"
+, "keywords": [ "underscore", "helpers", "data", "buffers", "streams", "formats" ]
+, "version": "0.0.1-4"
 , "homepage": "https://github.com/orlin/massagist/"
 , "repository":
   { "type": "git"
@@ -9,24 +9,23 @@
   }
 , "bugs":
   { "mail": "om@soundsapiens.com"
-  , "web" : "https://github.com/orlin/massagist/issues"
+  , "url" : "https://github.com/orlin/massagist/issues"
   }
 , "author": "Orlin M Bozhinov <om@soundsapiens.com> (http://soundsapiens.com)"
 , "contributors": []
 , "directories": { "lib": "./lib" }
 , "main": "index"
 , "dependencies":
-  { "coffee-script": ""
-  , "underscore": ""
-  , "underscore.string": ""
-  , "eyes": ""
-  , "yaml": ""
-  , "markdown": ""
-  , "schema": ""
+  { "coffee-script": "*"
+  , "underscore": "*"
+  , "underscore.string": "*"
+  , "eyes": "*"
+  , "yaml": "*"
+  , "markdown": "*"
+  , "schema": "*"
   }
-, "devDependencies": { "vows": "" }
-, "scripts": { "test": "vows spec/*.js" }
-, "engines" : { "node" : "0.4 || 0.5" }
+, "devDependencies": { "paige": "*" }
+, "scripts": {}
 , "licenses":
   [ { "type": "Unlicense"
     , "url" : "http://unlicense.org/"
