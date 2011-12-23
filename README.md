@@ -1,10 +1,11 @@
 Massagist
 =========
 
-A couple of somewhat useful modules:
+A couple of barely useful (node.js coffee-script) modules:
 
 * Massage (streams and data formats)
 * _ (underscore, ~.string & other mixins)
+
 
 License
 -------
