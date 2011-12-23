@@ -1,4 +1,4 @@
-_       = require("undermix")._
+_       = require("./undermix")._
 
 class Massage
 

@@ -1,8 +1,8 @@
-require.paths.unshift(__dirname + "/lib");
-require.paths.unshift(__dirname + "/node_modules");
+require('coffee-script');
 
 // Exports
-['massage', 'undermix'].forEach(function(path) {
+['massage', 'undermix'].forEach(function(name) {
+  var path = './lib/' + name
   var module = require(path);
   for (var i in module) {
     exports[i] = module[i];
