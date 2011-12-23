@@ -1,7 +1,20 @@
-# define (require, exports, module) ->
+# TODO: define (require, exports, module) ->
 _ =     require("underscore")
 _.mixin require("underscore.string")
 _.mixin
+
+  # Borrowed [type function](http://coffeescriptcookbook.com/chapters/classes_and_objects/type-function)
+  # to use instead of the [typeof operator](https://developer.mozilla.org/en/JavaScript/Reference/Operators/typeof)
+  type: (obj) ->
+    if obj == undefined or obj == null
+      return String obj
+    classToType = new Object
+    for name in "Boolean Number String Function Array Date RegExp".split(" ")
+      classToType["[object " + name + "]"] = name.toLowerCase()
+    myClass = Object.prototype.toString.call obj
+    if myClass of classToType
+      return classToType[myClass]
+    return "object"
 
   # Converts the arguments list to an Array
   aToArr: (list) ->
