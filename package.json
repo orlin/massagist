@@ -1,7 +1,7 @@
 { "name": "massagist"
 , "description": "streaming data formats"
 , "keywords": [ "underscore", "helpers", "data", "buffers", "streams", "formats" ]
-, "version": "0.0.1-4"
+, "version": "0.0.1-5"
 , "homepage": "https://github.com/orlin/massagist/"
 , "repository":
   { "type": "git"
@@ -9,7 +9,7 @@
   }
 , "bugs":
   { "mail": "om@soundsapiens.com"
-  , "url" : "https://github.com/orlin/massagist/issues"
+  , "url" : "https://www.pivotaltracker.com/projects/274667"
   }
 , "author": "Orlin M Bozhinov <om@soundsapiens.com> (http://soundsapiens.com)"
 , "contributors": []
@@ -26,6 +26,7 @@
   }
 , "devDependencies": { "paige": "*" }
 , "scripts": { "paige": "./node_modules/.bin/paige" }
+, "engines" : { "node" : "0.6.x", "npm": "1.1.x" }
 , "licenses":
   [ { "type": "Unlicense"
     , "url" : "http://unlicense.org/"

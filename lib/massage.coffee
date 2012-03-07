@@ -44,6 +44,7 @@ class Massage
         console.log "Massage for schema.js validation has failed."
       stuff
     babylon: (stuff, language = "en") ->
+      # Note this is #wontfix for now - doing other kind of translation...
       stuff
 
   train: (hands_on) ->

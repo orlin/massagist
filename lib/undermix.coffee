@@ -1,4 +1,3 @@
-# TODO: define (require, exports, module) ->
 _ =     require("underscore")
 _.mixin require("underscore.string")
 _.mixin
