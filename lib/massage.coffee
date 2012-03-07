@@ -83,7 +83,7 @@ class Massage
     self = this
     stream_in.setEncoding encoding
     stream_in.on "data", (chunk) ->
-      stream_out.end self.transform(chunk), encoding
+      stream_out.write self.transform(chunk), encoding
 
   constructor: (@sequence = [], immediate, massagists) ->
     this.transform(immediate, massagists) if immediate?
