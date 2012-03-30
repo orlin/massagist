@@ -82,7 +82,6 @@ class Massage
   # piping buffer transformations
   pipe: (stream_in, stream_out, encoding = "utf8") ->
     self = this
-    stream_in.setEncoding encoding
     stream_in.on "data", (chunk) ->
       stream_out.write self.transform(chunk), encoding
 
