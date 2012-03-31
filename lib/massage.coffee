@@ -34,7 +34,7 @@ class Massage
               stuff[i][key] = String(val).yellow
             else
               stuff[i][key] = String(val).white
-        require("cliff").stringifyObjectRows(stuff, titles, color) + '\n'
+        require("cliff").stringifyObjectRows stuff, titles, color
       else
         @inspect stuff # none or incompatible data (to inspect)
     yaml: (stuff, opt) ->
@@ -98,6 +98,7 @@ class Massage
     self = this
     stream_in.on "data", (chunk) ->
       stream_out.write self.transform(chunk), encoding
+    stream_in.on "end", -> stream_out.emit "end"
 
   constructor: (@sequence = [], immediate, massagists) ->
     this.transform(immediate, massagists) if immediate?
