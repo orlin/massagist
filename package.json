@@ -1,7 +1,7 @@
 { "name": "massagist"
 , "description": "streaming data formats"
 , "keywords": [ "underscore", "helpers", "data", "buffers", "streams", "formats" ]
-, "version": "0.0.1-5"
+, "version": "0.0.2-1"
 , "homepage": "https://github.com/orlin/massagist/"
 , "repository":
   { "type": "git"
