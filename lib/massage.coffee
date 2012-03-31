@@ -98,7 +98,6 @@ class Massage
     self = this
     stream_in.on "data", (chunk) ->
       stream_out.write self.transform(chunk), encoding
-    stream_in.on "end", -> stream_out.emit "end"
 
   constructor: (@sequence = [], immediate, massagists) ->
     this.transform(immediate, massagists) if immediate?
