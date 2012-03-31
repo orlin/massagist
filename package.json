@@ -19,6 +19,7 @@
   { "coffee-script": "*"
   , "underscore": "*"
   , "underscore.string": "*"
+  , "cliff": "*"
   , "eyes": "*"
   , "yaml": "*"
   , "markdown": "*"

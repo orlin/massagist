@@ -23,6 +23,20 @@ class Massage
     ) ->
       inspect = require("eyes").inspector config
       inspect stuff
+    table: (stuff) ->
+      # Expecting Backbone.Collection.toJSON() with stuff in it.
+      if _.isArray(stuff) and stuff.length > 0 and _.isObject(stuff[0])
+        titles = _.keys stuff[0]
+        (color ?= []).push "blue" for count in [0..titles.length]
+        for i, rows of stuff
+          for key, val of rows
+            if i % 2 is 0
+              stuff[i][key] = String(val).yellow
+            else
+              stuff[i][key] = String(val).white
+        require("cliff").stringifyObjectRows(stuff, titles, color) + '\n'
+      else
+        @inspect stuff # none or incompatible data (to inspect)
     yaml: (stuff, opt) ->
       # TODO: file a bug, this doesn't parse yaml.safe_dump from http://pyyaml.org/wiki/PyYAML
       # Error: hash not properly dedented, near ": {0: 148.3199601725772, "
