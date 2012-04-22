@@ -27,7 +27,8 @@ class Massage
       # Expecting Backbone.Collection.toJSON() with stuff in it.
       if _.isArray(stuff) and stuff.length > 0 and _.isObject(stuff[0])
         titles = _.keys stuff[0]
-        (color ?= []).push "blue" for count in [0..titles.length]
+        color = []
+        color.push "blue" for count in [0..titles.length]
         for i, rows of stuff
           for key, val of rows
             if i % 2 is 0
