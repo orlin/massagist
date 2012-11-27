@@ -27,7 +27,7 @@
   }
 , "devDependencies": { "paige": "*" }
 , "scripts": { "paige": "./node_modules/.bin/paige" }
-, "engines" : { "node" : "0.6.x", "npm": "1.1.x" }
+, "engines" : { "node" : "0.8.x", "npm": "1.1.x" }
 , "licenses":
   [ { "type": "Unlicense"
     , "url" : "http://unlicense.org/"
