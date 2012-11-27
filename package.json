@@ -23,7 +23,7 @@
   , "eyes": "*"
   , "yaml": "*"
   , "markdown": "*"
-  , "schema": "*"
+  , "schema": "0.2.0"
   }
 , "devDependencies": { "paige": "*" }
 , "scripts": { "paige": "./node_modules/.bin/paige" }
